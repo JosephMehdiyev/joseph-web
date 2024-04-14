@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-color: #f8f9fa;
     font-family: "Poppins", sans-serif;
     color: black
 }
@@ -41,29 +41,57 @@ body {
 }
 
 .header-buttons {
-    transition: background .2s ease,color .2s ease,opacity .2s ease;
+    transition: color 0.2s, border 0.1s ease;
     padding: 10px 15px;
     color: #fff;
     text-decoration: none;
     text-align: center;
     font-size: 9px;
-    transition: color 0.2s;
+    margin: auto;
 }
 .header-buttons:hover {
     color: rgb(108, 29, 199);
+    border: rgb(108, 29, 199) solid 1px;
+    border-radius: 20px;
 }
-
 .empty-space {
     flex-grow: 1;
 }
 
 .container {
-    border: 5px solid black;
+    background-color: #fff;
     width: 70%;
     margin: auto;
-    height: 1200px;
-    display: none;
 } 
+.left {
+    width:65%;
+}
+
+.pagetitle {
+    margin-left: 15px;
+}
+.pagetitle h1 {
+    padding: 20px;
+    font-size: 25px;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 15px;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    width: 80%;
+    opacity: 0.7;
+}
+.contentwrap {
+    padding: 20px;
+}
+p {
+    margin-bottom: 1rem;
+}
 
 
 
