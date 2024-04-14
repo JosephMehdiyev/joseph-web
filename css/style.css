@@ -5,58 +5,73 @@
 }
 
 body {
-    background-color: #01080f;
-    font-family: "Rubik", sans-serif;
-    color: #e8e6e3;
+    background-color: white;
+    font-family: "Poppins", sans-serif;
+    color: black
 }
-.container {
-    margin: auto;
-    width: 70%;
-    background-color: #050b19
-}
-
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.nav-bar-content {
-    display: block;
+.header{
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,.251);
     color: white;
+    padding: 13px;
+}
+
+.header-title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 1;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
 }
-
-.horizontal {
-    float: right;
+.header-title:hover {
+    color: rgb(108, 29, 199);
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.main {
-    margin-top: 50px;
-    height: 1500px;
+.header-buttons {
+    transition: background .2s ease,color .2s ease,opacity .2s ease;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    font-size: 9px;
+    transition: color 0.2s;
+}
+.header-buttons:hover {
+    color: rgb(108, 29, 199);
+}
+.header-buttons:hover ~ .header-buttons{
+    opacity: 0.7;
+}
+.empty-space {
+    flex-grow: 1;
 }
 
-.context{
-    float: left;
-    width: 80%;
-    height: 500px;
-}
+.container {
+    border: 5px solid black;
+    width: 70%;
+    margin: auto;
+    height: 1200px;
+    display: none;
+} 
 
-.table {
-    padding-top: 20px;
-    padding-left: 35px;
-    background-color: #222834;
-    float: right;
-    height: 500px;
-    width: 20%;
-}
 
-.logo
-{
-    float: left;
-}
+
+
+
+
+
+
 
