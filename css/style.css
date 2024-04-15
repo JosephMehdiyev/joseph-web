@@ -93,6 +93,7 @@ hr {
 }
 p {
     margin-bottom: 1rem;
+    font-size: 14px;
 }
 
 .right {
@@ -100,7 +101,7 @@ p {
     height: 500px;
     float: right;
     margin: 20px;
-    margin-top: 130px;
+    margin-top: 50px;
     font-size: 0.9em;
     margin-left: 60px;
 }
@@ -125,9 +126,30 @@ li {
     margin-left: 20px;
     
 }
+p a {
+    color: blue;
+    text-decoration: none;
+}
+p a:hover {
+    color: purple;
+}
+.content-title {
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.nav-buttons:hover {
+    color: rgb(108, 29, 199);
+
+}
 
 
-
+.margin-bottom {
+    margin-bottom: 30px;
+    margin-left: 5px;
+    color: rgb(184, 184, 184);
+    margin-right: 0px;
+}
 
 
 
