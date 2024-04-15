@@ -62,16 +62,18 @@ body {
     background-color: #fff;
     width: 70%;
     margin: auto;
+    overflow: hidden;
 } 
 .left {
     width:65%;
+    float: left;
 }
 
 .pagetitle {
     margin-left: 15px;
 }
 .pagetitle h1 {
-    padding: 20px;
+    margin: 20px;
     font-size: 25px;
 }
 
@@ -93,6 +95,36 @@ p {
     margin-bottom: 1rem;
 }
 
+.right {
+    width: 25%;
+    height: 500px;
+    float: right;
+    margin: 20px;
+    margin-top: 130px;
+    font-size: 0.9em;
+    margin-left: 60px;
+}
+.right.left {
+    display: inline-block;
+}
+
+.lists {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: #7b9cde;
+}
+li {
+    text-decoration: none;
+    color: #7b9cde;
+    list-style: none;
+}
+
+.list-left-margin {
+    margin-left: 20px;
+    
+}
 
 
 
