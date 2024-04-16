@@ -46,7 +46,7 @@ body {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 9px;
+    font-size: 0.5625rem;
     margin: auto;
 }
 .header-buttons:hover {
@@ -59,6 +59,7 @@ body {
 }
 
 .container {
+    display: flex;
     background-color: #fff;
     width: 70%;
     margin: auto;
@@ -74,7 +75,7 @@ body {
 }
 .pagetitle h1 {
     margin: 20px;
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
 
 hr {
@@ -93,7 +94,7 @@ hr {
 }
 p {
     margin-bottom: 1rem;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 .right {
@@ -134,7 +135,7 @@ p a:hover {
     color: purple;
 }
 .content-title {
-    font-size: 15px;
+    font-size: 0.9375rem;
     padding-bottom: 5px;
 }
 
