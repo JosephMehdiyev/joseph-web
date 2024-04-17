@@ -1,0 +1,22 @@
+- title: About
+  link: /about.html
+  subpages:
+    - subtitle: CV
+      sublink: /CV.pdf
+    - subtitle: subtitle2
+      sublink: sublink2
+- title: Projects
+  link: /projects/main.html
+  subpages:
+    - subtitle: This website
+      sublink: /projects/web.html
+- title: Publications
+  link: /publications/main.html
+  subpages:
+- title: Personal/Hobbies
+  link: 
+  subpages:
+- title: Contact
+  link: /contact/main.html
+  subpages:
+  

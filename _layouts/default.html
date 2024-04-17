@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        {% include head-settings.html %}
+        <title>{{ page.title }}</title>
+</head>
+<body>
+    {% include navigation-top.html %}
+    <div class="container">
+                {{ content }}
+            {% include navigation-right.html %}
+    </div>
+</body>
+</html>

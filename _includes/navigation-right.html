@@ -1,0 +1,14 @@
+<div class="right">
+    <ul>
+        {% for item in site.data.navigation-right %}
+        <li class="lists">
+            <a class="nav-buttons" href="{{ item.link }}"> {{ item.title }}</a>
+            <ul>
+                   {% for subpage in item.subpages %}
+                      <li class="list-left-margin"> <a class="nav-buttons"href="{{ subpage.sublink }}">‧ {{ subpage.subtitle }}</a> </li>
+                   {% endfor %}
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
