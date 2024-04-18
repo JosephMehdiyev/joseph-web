@@ -1,11 +1,14 @@
+{% assign current = page.url | prepend: '/joseph-web' %}
 <div class="right">
     <ul>
         {% for item in site.data.navigation-right %}
         <li class="lists">
-            <a class="nav-buttons" href="{{ item.link }}"> {{ item.title }}</a>
+            <a class="nav-buttons" href="{{ item.link }}" {% if current == item.link %}style="color:  rgb(108, 29, 199);"{% endif %}> 
+                {{ item.title }}
+            </a>
             <ul>
                    {% for subpage in item.subpages %}
-                      <li class="list-left-margin"> <a class="nav-buttons"href="{{ subpage.sublink }}">‧ {{ subpage.subtitle }}</a> </li>
+                      <li class="list-left-margin"> <a class="nav-buttons" href="{{ subpage.sublink }}"  {% if current == subpage.sublink %}style="color:  rgb(108, 29, 199);"{% endif %}>‧ {{ subpage.subtitle }}</a> </li>
                    {% endfor %}
             </ul>
         </li>

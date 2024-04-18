@@ -21,6 +21,7 @@ body {
 }
 
 .header-title {
+    transition: color 0.1s ease;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -41,18 +42,16 @@ body {
 }
 
 .header-buttons {
-    transition: color 0.2s, border 0.1s ease;
-    padding: 10px 15px;
+    transition: color 0.1s ease;
+    padding: 0.625rem 0.938rem;
     color: #fff;
     text-decoration: none;
     text-align: center;
-    font-size: 0.5625rem;
+    font-size: 0.6625rem;
     margin: auto;
 }
 .header-buttons:hover {
     color: rgb(108, 29, 199);
-    border: rgb(108, 29, 199) solid 1px;
-    border-radius: 20px;
 }
 .empty-space {
     flex-grow: 1;
@@ -64,10 +63,10 @@ body {
     width: 70%;
     margin: auto;
     overflow: hidden;
+    min-height: 100vh;
 } 
 .left {
     width:65%;
-    float: left;
 }
 
 .pagetitle {
@@ -94,20 +93,16 @@ hr {
 }
 p {
     margin-bottom: 1rem;
-    font-size: 0.875rem;
+    font-size: 1.1rem;
 }
 
 .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25%;
     height: 500px;
-    float: right;
-    margin: 20px;
-    margin-top: 50px;
-    font-size: 0.9em;
-    margin-left: 60px;
-}
-.right.left {
-    display: inline-block;
+    font-size: 1.1rem;
 }
 
 .lists {
@@ -153,3 +148,13 @@ p a:hover {
 }
 
 
+.h2-structure {
+    margin-bottom: 0.1rem;
+    font-size: 1.2rem;
+}
+
+h6 {
+    margin-top: 1rem;
+    color: rgb(71, 71, 71);
+    font-weight: 400;
+}
