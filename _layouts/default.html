@@ -4,11 +4,21 @@
         {% include head-settings.html %}
         <title>{{ page.title }}</title>
 </head>
-<body>
-    {% include navigation-top.html %}
+ <body>
+{% include navigation-top.html %}
     <div class="container">
-                {{ content }}
             {% include navigation-right.html %}
+                {{ content }}
     </div>
-</body>
+
+<script>
+        const hamburger = document.querySelector(".hamburger")
+        const right = document.querySelector(".right")
+        
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("active");
+            right.classList.toggle("active");
+        })
+</script>
+ </body>
 </html>
