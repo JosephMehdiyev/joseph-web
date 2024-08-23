@@ -8,9 +8,16 @@
   subpages:
     - subtitle: This website
       sublink: /joseph-web/projects/web.html
+    - subtitle: Cormat
+      sublink: /joseph-web/projects/cormat.html
+      subpages:
+        - subtitle: stuff
+        - sublink: test
 - title: Publications
   link: /joseph-web/publications/main.html
   subpages:
+    -  subtitle: Brief Probability and Statistics with Optimized Code Applications
+       sublink: /joseph-web/publications/ProbabilityAndStatistics.html
 - title: Personal/Hobbies
   link: 
   subpages:
