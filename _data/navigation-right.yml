@@ -1,5 +1,5 @@
 - title: About
-  link: /joseph-web/about/main.html
+  link: about/main.html
   subpages:
     - subtitle: CV
       sublink: /joseph-web/about/CV.pdf
