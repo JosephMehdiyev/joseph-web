@@ -1,0 +1,328 @@
+%
+%Academic CV LaTeX Template
+% Author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+%
+% For errors, suggestions, or improvements, please contact:
+% Email: pavankumard.pg19.ma@nitp.ac.in
+%
+
+
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt} 
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Yusif Mehdiyev Musa}}
+\end{center}
+\vspace{-5mm}
+
+\begin{center}
+    \small{
+    +994555418363 | \href{mailto:yusifmehdiyev55@gmail.com}{yusifmehdiyev55@gmail.com} | 
+    \href{https://josephmehdiyev.org/}{josephmehdiyev.org}
+    }
+\end{center}
+\vspace{-5mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faGithub} \href{https://github.com/JosephMehdiyev}{JosephMehdiyev}
+    }
+\end{center}
+\vspace{-5mm}
+\begin{center}
+    \small{Azerbaijan, Baku}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Objective}}
+\vspace{1mm}
+\small{
+I am seeking new internship opportunities and practical knowledge in Data Science and Machine Learning for my future career. I am aiming to contribute to innovative projects and learn experience in my field.
+}
+\vspace{-2mm}
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{ADA University}{Baku, Azerbaijan}
+{Bachelor of Science in Mathematics}{2024 - Since}
+\resumeItemListStart
+\item Rector’s List of Honor for high SAT score
+\resumeItemListEnd
+
+
+\resumeSubheading
+{Full secondary School Numbered 12}{Baku, Azerbaijan}
+{Secondary Education}{2013 - 2024}
+\resumeItemListStart
+\item GPA: 3.95/4.00
+\item SAT: 1500/1600
+\item 11th grade Natioanl Exam: 281/300
+\item 9th grade National Exam: 262/300
+\item 9th grade Honor's degree
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+
+\section{\textbf{Projects}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Cormat: 3D math software from scratch}
+  {Tools: C++, Cmake, OpenGl, GLFW, ImGui, GLSL shaders}
+  {March 2024 - Since}
+  {{}\href{https://github.com/JosephMehdiyev/cormat}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+  \item Developed OpenGL pipeline system to render the mathematical graphs
+  \item Implemented various algorithms and data structures for various purposes
+  \item Implemented Object Oriented Programming structure to organize the project
+      \item Will use advanced mathematical skills to optimize the rendering and improve the aesthetical quality of the project
+\resumeItemListEnd
+
+
+
+\resumeSubHeadingListEnd
+
+\vspace{-6mm}
+
+
+\section{\textbf{Publications}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Probability and Statistics with R and Python}
+  {A notebook style amateur open-sourced book written for educational purposes}
+  {March 2024 - Since}
+  {{}\href{https://github.com/JosephMehdiyev/Statistics-and-Probability-with-R}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+  \item Talks about Probability Theory, Statistical Inference and its methods, various Statistical modelds, Simulations and Math behind Machien learning.
+  \item Includes coding examples in Python libraries such as pytorch, and R using tidyverse packages.
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+ \resumeSubItem{Mathematical Knowledge:}
+ { Pre-Calculus, Calculus, Linear Algebra, Elementary Graph Theory, Elementary Number Theory, Probability and Statistics, Mathematical Analysis}
+  \resumeSubItem{Programming Languages:}
+    { C, C++, Python, R, Lua (neovim)}
+  \resumeSubItem{Database Systems:}
+    { PostgreSQL(learning)}
+  \resumeSubItem{Data Science \& Machine Learning:}
+  {Currently learning R tidyverse packages and important python libraries such as pytorch, matplotlib, pandas, scipy and beautifulsoup4 }
+  \resumeSubItem{DevOps \& Version Control:}
+    { Git, Cmake}
+  \resumeSubItem{Other Tools \& Technologies:}
+    { LaTex, Linux (arch and debian based)}
+ \resumeHeadingSkillEnd
+
+\section{\textbf{Contests and Awards}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeProject
+  {CodeForces Competitive Programming Contests}
+  {Practicing Competitive Programming skills periodically}
+  {May 2024 - Since}
+  {{}\href{https://codeforces.com/profile/JosephMehdiyev}{\textcolor{darkblue}{\faIcon{globe}}}}
+
+\resumeItemListStart
+  \item Learning new algorithm concepts and implementing them quickly
+  \item Participating in contests all the time to gain more experience about CP
+  \item Implementing new code techniques and improving  coding skills
+\resumeItemListEnd
+
+\resumeProject
+  {Azerbaijan Mathematical Selection Tests Participant}
+  {Azerbaijan TST for famous mathematical olympiads such as IMO, BMO, and JBMO}
+  {September 2021 - May 2022}
+  {}
+\resumeItemListStart
+  \item Developed complex analytical and mathematical skills
+    \item Used mathematical proof techniques such as proof by contradiction, induction and construction
+\item Learned and understood tricky Combinatorics and Number Theory theorems
+
+\resumeItemListEnd
+
+\resumeProject
+  {"World Star" Gold Award Winner}
+  {Thailand International Mathematical Olympiad}
+  {Finals 2021-2022}
+  {{}\href{http://www.thaiimo.com/uploads/2/8/9/2/28923219/timo_final_round_2122_s3.pdf}{\textcolor{darkblue}{\faIcon{globe}}}}
+\resumeItemListStart
+\item Developed various analytical geometry and combinatorics methods 
+\resumeItemListEnd
+
+\resumeProject
+  {Gold Award Winner}
+  {Singapore  and Asian Schools Math Olympiad}
+  {2021-2022}
+  {{}\href{https://simccorg.sharepoint.com/:b:/s/SIMCCPublic/EdfiL57S9bpIojiuNb0vscQB_DwwfjQszeNSuPnKxdNfrg?e=H7m10g}{\textcolor{darkblue}{\faIcon{globe}}}}
+\resumeItemListStart
+  \item Developed fast and accurate thinking skills
+\resumeItemListEnd
+
+
+\resumeSubHeadingListEnd
+
+\end{document}
