@@ -16,8 +16,10 @@
 - title: Publications
   link: /publications/main.html
   subpages:
-    -  subtitle: Probability and Statistics with Code Applications
+    -  subtitle: Probability and Statistics notes
        sublink: /publications/ProbabilityAndStatistics.html
+    -  subtitle: Mathematical Analysis notes
+       sublink: /publications/analysis.html
 - title: Personal/Hobbies
   link: 
   subpages:

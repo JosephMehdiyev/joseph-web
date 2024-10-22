@@ -70,6 +70,11 @@ body {
     width:65%;
     float: left;
 }
+.left img {
+            width: 100%;  
+            height: auto; 
+            object-fit: cover; 
+        }
 
 .pagetitle {
     margin-left: 15px;
