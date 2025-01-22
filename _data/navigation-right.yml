@@ -1,27 +1,29 @@
 - title: About
-  link: /joseph-web/about/main.html
+  link: /about/main.html
   subpages:
     - subtitle: CV
-      sublink: /joseph-web/about/CV.pdf
+      sublink: /about/CV.pdf
 - title: Projects
-  link: /joseph-web/projects/main.html
+  link: /projects/main.html
   subpages:
     - subtitle: This website
-      sublink: /joseph-web/projects/web.html
+      sublink: /projects/web.html
     - subtitle: Cormat
-      sublink: /joseph-web/projects/cormat.html
+      sublink: /projects/cormat.html
       subpages:
         - subtitle: stuff
         - sublink: test
 - title: Publications
-  link: /joseph-web/publications/main.html
+  link: /publications/main.html
   subpages:
-    -  subtitle: Brief Probability and Statistics with Optimized Code Applications
-       sublink: /joseph-web/publications/ProbabilityAndStatistics.html
+    -  subtitle: Probability and Statistics notes
+       sublink: /publications/ProbabilityAndStatistics.html
+    -  subtitle: Mathematical Analysis notes
+       sublink: /publications/analysis.html
 - title: Personal/Hobbies
   link: 
   subpages:
 - title: Contact
-  link: /joseph-web/contact/main.html
+  link: /contact/main.html
   subpages:
   
