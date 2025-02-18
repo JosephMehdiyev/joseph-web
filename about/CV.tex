@@ -8,8 +8,6 @@
 % Email: pavankumard.pg19.ma@nitp.ac.in
 %
 
-
-
 \documentclass[a4paper,11pt]{article}
 
 % Package imports
@@ -37,7 +35,7 @@
 \definecolor{darkblue}{RGB}{0,0,139}
 
 % Page layout
-\setlength{\multicolsep}{0pt} 
+\setlength{\multicolsep}{0pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -81,26 +79,28 @@
 
 % Section formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+    \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
 % Custom commands
 \newcommand{\resumeItem}[2]{
-  \item{
-    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
-  }
+\item{
+        \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+    }
 }
 
 \newcommand{\resumePOR}[3]{
-\vspace{0.5mm}\item
+    \vspace{0.5mm}
+\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}} 
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
     \end{tabular*}
     \vspace{-2mm}
 }
 
 \newcommand{\resumeSubheading}[4]{
-\vspace{0.5mm}\item
+    \vspace{0.5mm}
+\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#4}} \\
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
@@ -109,7 +109,8 @@
 }
 
 \newcommand{\resumeProject}[4]{
-\vspace{0.5mm}\item
+    \vspace{0.5mm}
+\item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#3}} \\
         \footnotesize{\textit{#2}} & \footnotesize{#4}
@@ -122,18 +123,24 @@
 \renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
-\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
-\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+\newcommand{\resumeSubHeadingListStart}{
+\begin{itemize}[leftmargin=*,labelsep=1mm]}
+        \newcommand{\resumeHeadingSkillStart}{
+        \begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+                \newcommand{\resumeItemListStart}{
+                \begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
 
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
-\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+                        \newcommand{\resumeSubHeadingListEnd}{
+                    \end{itemize}\vspace{2mm}}
+                \newcommand{\resumeHeadingSkillEnd}{
+            \end{itemize}\vspace{-2mm}}
+        \newcommand{\resumeItemListEnd}{
+    \end{itemize}\vspace{-2mm}}
 \newcommand{\cvsection}[1]{%
-\vspace{2mm}
-\begin{tcolorbox}
-    \textbf{\large #1}
-\end{tcolorbox}
+    \vspace{2mm}
+    \begin{tcolorbox}
+        \textbf{\large #1}
+    \end{tcolorbox}
     \vspace{-4mm}
 }
 
@@ -188,9 +195,7 @@
 
 \vspace{-4mm}
 
-
 \vspace{-2mm}
-
 
 \section{\textbf{Education}}
 \vspace{-0.4mm}
@@ -205,7 +210,6 @@
 \item IELTS: 7.5 (8.5/8.5/6.5/6)
 \resumeItemListEnd
 
-
 \resumeSubheading
 {Complete Secondary School Number 12}{Baku, Azerbaijan}
 {General Secondary Education}{2013 - 2024}
@@ -214,35 +218,42 @@
 \item SAT: 1500/1600 (790 M,710 W/R)
 \item 11th grade National Exam: 282/300
 \item 9th grade National Exam: 263/300
-\item 9th grade Honors Certificate
+\item 9th grade Honor's Certificate
 \resumeItemListEnd
-
 \resumeSubHeadingListEnd
 \vspace{-6mm}
 
+\section{\textbf{Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+\resumeSubheading
+{{Teaching assistant in ADA university }}{Baku, Azerbaijan}
+{Teaching Assistant in Linear Algebra}{February 2025 - Since}
+\resumeItemListStart
+\item Reviewed and graded homeworks and exams, assisted the professors in teaching.
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+\vspace{-6mm}
 
 \section{\textbf{Projects}}
 \vspace{-0.4mm}
 \resumeSubHeadingListStart
-
 \resumeProject
 {Cormat: 3D math software for visualizing mathematical functions from scratch}
 {Tools: C++, Cmake, OpenGl, GLFW, ImGui, GLSL shaders}
 {March 2024 - Present}
 {{}\href{https://github.com/JosephMehdiyev/cormat}{\textcolor{darkblue}{\faGithub}}}
 \resumeItemListStart
-\item Developed OpenGL pipeline system to render the mathematical graphs
-\item Implemented various algorithms and data structures for various purposes
-\item Implemented Object Oriented Programming structure to organize the project
-\item Planning to use advanced mathematical skills to optimize the rendering and improve the aesthetical quality of the project
+\item Developed a 3D math visualization tool from scratch using C++ and OpenGL, enabling users to plot and interact with mathematical functions.
+\item Implemented Linear Algebra transformations (e.g., translation, rotation, scaling) to manipulate 3D objects and camera perspectives
+programmatically.
+\item Designed and structured the project using Object-Oriented Programming (OOP) principles for modularity, scalability, and maintainability.
+\item Built and managed the project with CMake for organization.
 \resumeItemListEnd
-
-
-
 \resumeSubHeadingListEnd
-
 \vspace{-6mm}
 
+\
 
 \section{\textbf{Publications}}
 \vspace{-0.4mm}
@@ -254,8 +265,9 @@
 {March 2024 - Present}
 {{}\href{https://github.com/JosephMehdiyev/Statistics-and-Probability-with-Code-Applications/blob/main/main.pdf}{\textcolor{darkblue}{\faGithub}}}
 \resumeItemListStart
-\item Talks about Probability Theory, Statistical Inference and its methods, various Statistical models, Simulations and Math behind Machine learning.
-\item Planning to include coding examples in Python libraries such as pytorch, scikit-learn, scipy and R using tidyverse packages.
+\item Compiled a comprehensive personal notebook covering Probability Theory, Statistical Inference, and Statistical Models.
+\item Explored key concepts such as probability distributions, hypothesis testing, regression analysis, and Bayesian inference, alongside
+their mathematical foundations.
 \resumeItemListEnd
 
 \resumeProject
@@ -264,8 +276,9 @@
 {September 2024 - Present}
 {{}\href{https://github.com/JosephMehdiyev/MathmeticalAnalysisNotes/blob/main/main.pdf}{\textcolor{darkblue}{\faGithub}}}
 \resumeItemListStart
-\item Includes notes about core topics of real analysis: completeness of reals, sequences, limits, derivatives, integrals.
-\item Wrote proofs to selected exercises, and practiced proof writing style and techniques.
+\item Created a detailed personal notebook on Real Analysis, covering core topics of the field.
+\item Practiced proof-writing techniques to strengthen understanding of abstract concepts and improve problem-solving skills in advanced mathematics.
+\item Organized content in a book-like format for personal reference, emphasizing clarity, depth, and accessibility for future review and application.
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -275,7 +288,7 @@
 \vspace{-0.4mm}
 \resumeHeadingSkillStart
 \resumeSubItem{Mathematical Knowledge:}
-{Vector Calculus, Linear Algebra, Elementary Graph Theory, Elementary Number Theory, Probability and Statistics, Real Analysis, Abstract Algebra}
+{Vector Calculus, Linear Algebra, Elementary Graph Theory, Elementary Number Theory, Probability and Statistics, Real Analysis, Abstract Algebra*}
 \resumeSubItem{Programming Languages:}
 { C, C++, Python, R, Lua, Python}
 \resumeSubItem{Database Systems:}
@@ -298,7 +311,9 @@
 {{}\href{https://codeforces.com/profile/JosephMehdiyev}{\textcolor{darkblue}{\faIcon{globe}}}}
 
 \resumeItemListStart
-\item Currently learning new algorithm concepts and and data structures and implementing them in a quick manner competitively.
+\item Actively learning and implementing algorithm concepts and data structures (e.g., dynamic programming, graph algorithms, trees, heaps)
+to solve problems efficiently and competitively.
+\item Practicing competitive programming techniques to improve problem-solving speed, optimize code performance, and write clean, efficient solutions.
 \resumeItemListEnd
 
 \resumeProject
@@ -308,7 +323,8 @@
 {{}\href{https://artofproblemsolving.com/community/user/948405}{\textcolor{darkblue}{\faIcon{globe}}}}
 
 \resumeItemListStart
-\item Archived Azerbaijan olympiad TSTST, TST and other problems for various national and international olympiads such as Azerbaijan Senior National Olympiad, Juniors'and Seniors' Balkan Mathmetical Olympiad and International Mathematics Olympiad.
+\item Archived Azerbaijan olympiad TSTST, TST and other problems for various national and international olympiads such as Azerbaijan Senior
+National Olympiad, Juniors'and Seniors' Balkan Mathmetical Olympiad and International Mathematics Olympiad.
 \resumeItemListEnd
 
 \resumeProject
@@ -335,16 +351,16 @@
 \small{
     \begin{enumerate}[leftmargin=*,labelsep=2mm]
         \item \textbf{Kamala Omarova}\\
-              Graduate student at UoW, Academic Advisor at ADA university \\
-              University Of Washington\\
-              Email: kamalo@uw.edu\\
-              Phone: +994 50 550 12 56\\
-              \textit{Relationship: Advisor, English teacher}
+            Graduate student at UoW, Academic Advisor at ADA university \\
+            University Of Washington\\
+            Email: kamalo@uw.edu\\
+            Phone: +994 50 550 12 56\\
+            \textit{Relationship: Advisor, English teacher}
         \item \textbf{Javanshir Azizov} \\
-              Asistant Professor \\
-              ADA university \\
-              Email: jazizov@ada.edu.az\\
-              \textit{Relationship: Mathematics professor}
+            Asistant Professor \\
+            ADA university \\
+            Email: jazizov@ada.edu.az\\
+            \textit{Relationship: Mathematics professor}
     \end{enumerate}
 }
 
