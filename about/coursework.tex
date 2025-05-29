@@ -1,15 +1,118 @@
-\documentclass[11pt]{scrreprt}
-\usepackage{config}
-\usepackage{amsmath, amssymb, amsthm}
+\documentclass[12pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
 \usepackage{hyperref}
-\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{lmodern}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{amssymb}
+\usepackage{helvet}
+\setlength{\parindent}{0pt}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+citecolor=blue,    }
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+\newcommand{\vocab}[1]{\textbf{\color{violet}#1}}
+\providecommand{\alert}{\vocab}
 
-\title{Transcript of Mathematics Coursework}
+\title{Transcript of Coursework}
 \author{Yusif Mehdiyev}
-\date{Last updated March, 2025}
+\date{Last updated May 29, 2025}
 
 \begin{document}
 
 \maketitle
+
+This file contains the important courseworks and the self-study subjects  I had over in my career.
+\renewcommand{\contentsname}{Contents:} % Remove "Contents" heading
+\tableofcontents
+
+\phantomsection
+\section*{\textcolor{blue}{\ \ \ \ \  ADA University}}
+\addcontentsline{toc}{section}{ADA University}
+\begin{itemize}[leftmargin = *]
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{MATH 1111}, \textit{Calculus I}, Spring 2025, Javanshir Azizov
+            \\
+            & Standard Calculus Course. Limits, Convergence and Divergence of Limits, Differentiation of the functions, Anti-Derivatives,
+            Integration, Fundamental Theorem of Calculus, Area Between Curves, Volumes by Rotation, Initial Value Problems, Introductory
+            Differential Equations.
+            \\
+            & \textit{Textbook:} Thomas’ Calculus Early Transcendentals.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{MATH 1201}, \textit{Abstract Algebra}, Spring 2025, Rafael Alizade
+            \\
+            & Group Theory, Permutations, Cosets and Theorem of Lagrange, Rings, Fields, Integral Domains, Rings of Polynomials, Vector
+            Spaces, Euler's and Fermat's Theorems.
+            \\
+            & \textit{Textbook:} John Fralelgh's A First Course in Abstract Algebra.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{CSCI 1101}, \textit{Programming Principles I}, Spring 2025, Rashad Aliyev
+            \\
+            & Standard Introductory Programming course for C and C++. Logic, Variables, Loops, Arrays, Strings, Functions, Pointers,
+            Dynamic Memory Allocation, Bitwise Operation, Elementary Algorithms.
+            \\
+            & \textit{Textbook:} None.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{MATH 3501}, \textit{Linear Algebra}, Fall 2025, Elchin Hasanilzade
+            \\
+            & Computation focused Linear Algebra course. Vectors, Hyperplanes, System of Linear Equations, Matrices, Echalon and Row
+            Canonical Forms, Span and Basis, Permutations, Determinants, Inverse of Matrices, Linear mappings and transformations, Change of Basis,
+            Similarity, Orthogonal Basis, Gram-Schmit Algorithm, Diagonalization, Eigenvalues, Eigenvectors, Linear Functional and Dual Spaces.
+            \\
+            & \textit{Textbook:} Schaum's Outline of Linear Algebra.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{MATH 1100}, \textit{Pre-Calculus}, Fall 2025, Javanshir Azizov
+            \\
+            & Standard (compulsory!) Pre-Calculus course. Definition of Functions, Injective and Surjective Functions, Trigonometric Functions etc.
+            \\
+            & \textit{Textbook:} Stewart's Precalculus.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            A & \textbf{SITE 1101}, \textit{Principles of Information Systems}, Fall 2025, Rashad Aliyev, Araz Yusubov
+            \\
+            & A course that introduces concepts of general Information Systems. Introduction to Programming, Computer Networks, Principles
+            of Designing Software, Development Pipeline etc.
+            \\
+            & \textit{Textbook:} None.
+        \end{tabularx}
+    \item[]
+        \begin{tabularx}{\textwidth}{@{}lX@{}}
+            P & \textbf{PDEV 2302}, \textit{Data And Computing Skills}, Fall 2025, Khalil Israfilzada.
+
+            \\
+            & Introductory course focused on Excel and Data Analysis.
+            \\
+            & \textit{Textbook:} None.
+        \end{tabularx}
+\end{itemize}
+\phantomsection
+\section*{\textcolor{blue}{\ \ \ \ \  Self-Study}}
+\addcontentsline{toc}{section}{Self-Study}
+\begin{itemize}
+    \item[] \textbf{Probability and Statistics}
+        \\
+        Discrete and Continous Random Variables, Expectation, Variance, Distribution of Random Variables, Cumultative Distribution
+        Function, Probability Density Function, Convergence in Distribution and Probability, Law of Large Numbers, Central Limit Theorem,
+        Statistical Models, Parametric and non-Parametric Inference, Point Estimator, Bias, Method of Moments, Maximum Likelihood,
+        Bootsrap, Hypothesis Testing and p-values, Risk and Loss Functions etc.
+        \\
+        \textit{Textbook: Wasserman's All of Statistics  A Concise Course in Statistical Inference}
+        \\
+        \textit{Technologies Practiced:} Python Libraries such as Pandas, Numpy, Scipy, Matplotlib, Seaborn.
+\end{itemize}
 
 \end{document}
