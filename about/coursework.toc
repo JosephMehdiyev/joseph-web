@@ -1,2 +1,3 @@
-\contentsline {section}{ADA University}{1}{section*.1}%
-\contentsline {section}{Self-Study}{2}{section*.2}%
+\contentsline {section}{University of Glasgow}{1}{section*.1}%
+\contentsline {section}{ADA University}{2}{section*.2}%
+\contentsline {section}{Self-Study}{3}{section*.3}%
