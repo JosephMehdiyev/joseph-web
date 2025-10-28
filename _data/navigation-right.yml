@@ -13,16 +13,22 @@
       subpages:
         - subtitle: stuff
         - sublink: test
-- title: Publications
+- title: Rambling nonsense with LaTeX
   link: /publications/main.html
   subpages:
     -  subtitle: Probability and Statistics notes
        sublink: /publications/ProbabilityAndStatistics.html
     -  subtitle: Mathematical Analysis notes
        sublink: /publications/analysis.html
+    -  subtitle: Abstract Algebra notes
+       sublink: /publications/algebra.html
 - title: Personal/Hobbies
-  link: 
+  link: /hobbies/main.html
   subpages:
+    -  subtitle: Games
+       sublink: /publications/ProbabilityAndStatistics.html
+    -  subtitle: Linux and thinkpads
+       sublink: /publications/analysis.html
 - title: Contact
   link: /contact/main.html
   subpages:
