@@ -40,7 +40,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\geometry{left=1.2cm, top=0.8cm, right=0.8cm, bottom=0.8cm}
 \setlength{\footskip}{5pt} % Addressing fancyhdr warning
 
 % Hyperlink setup (moved after fancyhdr to address warning)
@@ -98,23 +98,23 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-    \vspace{0.5mm}
+    \vspace{-0.5mm}
 \item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#4}} \\
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
     \end{tabular*}
-    \vspace{-2.4mm}
+    \vspace{-3mm}
 }
 
 \newcommand{\resumeProject}[4]{
-    \vspace{0.5mm}
+    \vspace{-0.5mm}
 \item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#3}} \\
         \footnotesize{\textit{#2}} & \footnotesize{#4}
     \end{tabular*}
-    \vspace{-2.4mm}
+    \vspace{-3mm}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -125,12 +125,12 @@
 \newcommand{\resumeSubHeadingListStart}{
 \begin{itemize}[leftmargin=*,labelsep=1mm]}
         \newcommand{\resumeHeadingSkillStart}{
-        \begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+        \begin{itemize}[leftmargin=*,itemsep=0.8mm, rightmargin=2ex]}
                 \newcommand{\resumeItemListStart}{
                 \begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
 
                         \newcommand{\resumeSubHeadingListEnd}{
-                    \end{itemize}\vspace{2mm}}
+                    \end{itemize}\vspace{-2mm}}
                 \newcommand{\resumeHeadingSkillEnd}{
             \end{itemize}\vspace{-2mm}}
         \newcommand{\resumeItemListEnd}{
@@ -212,9 +212,6 @@
 
 \resumeItemListEnd
 
-\resumeSubheading
-{Complete Secondary School Number 12}{Baku, Azerbaijan}
-{General Secondary Education}{2013 - 2024}
 \resumeSubHeadingListEnd
 
 \section{\textbf{Experience}}
@@ -228,7 +225,6 @@ grading homework or exams, proctoring exams, tutoring, offering office hour assi
 and performing clerical tasks associated with course instruction.
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-\vspace{-4mm}
 \section{\textbf{Projects}}
 \resumeSubHeadingListStart
 \resumeProject
@@ -267,50 +263,17 @@ and performing clerical tasks associated with course instruction.
 \section{\textbf{Skills}}
 \resumeHeadingSkillStart
 \resumeSubItem{Programming Languages:}
-{ C, C++, Python, R, Lua}
+{ C, C++, Python, R, Lua, CUDA}
 \resumeSubItem{Libraries:}
-{ Numpy, Scipy, Pandas, Matplotlib, Seaborn}
+{ Numpy, Scipy, Pandas, Matplotlib, Seaborn, Tidyverse}
 \resumeSubItem{Database Systems:}
 { PostgreSQL}
 \resumeSubItem{DevOps \& Version Control:}
 { Git, Cmake, Docker }
 \resumeSubItem{Other Tools \& Technologies:}
-{ Latex, Linux (arch and debian based), Microsoft Office, Vim/Neovim, OpenGL, Tableau, JupyterLab}
+{ Latex, Linux (arch and debian based), Microsoft Office, Vim/Neovim, OpenGL, JupyterLab}
 \resumeSubItem{Language Knowledge:}
-{Azerbaijani (Native), Turkish (C1), English (C1; IELTS 7.5), French (B1)}
+{Azerbaijani (Native), Turkish (C1), English (C1), French (B1)}
 \resumeHeadingSkillEnd
-
-\section{\textbf{Contests, Awards and other Activities}}
-\resumeSubHeadingListStart
-\resumeProject
-{Azerbaijan Olympiads Forum Maintainer}
-{Art of Problem Solving Forum}
-{April 2022 - September 2022}
-{{}\href{https://artofproblemsolving.com/community/user/948405}{\textcolor{darkblue}{\faIcon{globe}}}}
-
-\resumeItemListStart
-\item Archived Azerbaijan Olympiad TSTST, TST and other problems for various national and international olympiads such as Azerbaijan Senior
-National Olympiad, Juniors'and Seniors' Balkan Mathmetical Olympiad and International Mathematics Olympiad.
-\resumeItemListEnd
-
-\resumeProject
-{Azerbaijan Juniors' Mathematics Camp Participant}
-{Azerbaijan Olympiad camp for training invidiauls for famous mathematical olympiads such as IMO, BMO, and JBMO}
-{September 2021 - June 2022}
-{}
-\resumeItemListStart
-\item Collaborated with peers to solve challenging mathematical problems
-\item Participated in intensive training sessions, improving problem-solving strategies and critical thinking abilities975975
-
-\resumeItemListEnd
-\resumeProject
-{Azerbaijan Mathematics Team Selection Tests Participant}
-{Azerbaijan TST for famous mathematical olympiads such as IMO, BMO, and JBMO}
-{September 2021 - June 2022}
-{}
-\resumeItemListStart
-\item Participated in TST of Azerbaijani team
-\resumeItemListEnd
-\resumeSubHeadingListEnd
 
 \end{document}
