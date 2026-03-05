@@ -22,13 +22,6 @@
        sublink: /publications/analysis.html
     -  subtitle: Abstract Algebra notes
        sublink: /publications/algebra.html
-- title: Personal/Hobbies
-  link: /hobbies/main.html
-  subpages:
-    -  subtitle: Games
-       sublink: /publications/ProbabilityAndStatistics.html
-    -  subtitle: Linux and thinkpads
-       sublink: /publications/analysis.html
 - title: Contact
   link: /contact/main.html
   subpages:
