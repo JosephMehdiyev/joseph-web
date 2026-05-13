@@ -1,3 +1,4 @@
+% !TEX program = lualatex
 %Academic CV LaTeX Template
 % Author: Dubasi Pavan Kumar
 % LinkedIn: https://www.linkedin.com/in/im-pavankumar/
@@ -26,12 +27,13 @@
 \usepackage{fancyhdr}
 \usepackage{multicol}
 \usepackage{graphicx}
-\usepackage{cfr-lm}
 \usepackage{fontawesome5}
 
-\usepackage[T2A,T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[azerbaijani]{babel}
+\usepackage{fontspec}
+\setmainfont{FreeSerif}  % or any Unicode font with Cyrillic support
+
+\usepackage{babel}
+\babelprovide[import, main]{azerbaijani}
 
 % Color definitions
 \definecolor{darkblue}{RGB}{0,0,139}
@@ -43,7 +45,7 @@
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\geometry{left=1.2cm, top=0.8cm, right=0.8cm, bottom=0.8cm}
 \setlength{\footskip}{5pt} % Addressing fancyhdr warning
 
 % Hyperlink setup (moved after fancyhdr to address warning)
@@ -101,23 +103,23 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-    \vspace{0.5mm}
+    \vspace{-0.5mm}
 \item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#4}} \\
         \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
     \end{tabular*}
-    \vspace{-2.4mm}
+    \vspace{-3mm}
 }
 
 \newcommand{\resumeProject}[4]{
-    \vspace{0.5mm}
+    \vspace{-0.5mm}
 \item
     \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
         \textbf{#1} & \textit{\footnotesize{#3}} \\
         \footnotesize{\textit{#2}} & \footnotesize{#4}
     \end{tabular*}
-    \vspace{-2.4mm}
+    \vspace{-3mm}
 }
 
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
@@ -128,12 +130,12 @@
 \newcommand{\resumeSubHeadingListStart}{
 \begin{itemize}[leftmargin=*,labelsep=1mm]}
         \newcommand{\resumeHeadingSkillStart}{
-        \begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+        \begin{itemize}[leftmargin=*,itemsep=0.8mm, rightmargin=2ex]}
                 \newcommand{\resumeItemListStart}{
                 \begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
 
                         \newcommand{\resumeSubHeadingListEnd}{
-                    \end{itemize}\vspace{2mm}}
+                    \end{itemize}\vspace{-2mm}}
                 \newcommand{\resumeHeadingSkillEnd}{
             \end{itemize}\vspace{-2mm}}
         \newcommand{\resumeItemListEnd}{
@@ -157,7 +159,6 @@
 % Font options
 \newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
 \newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
-\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
 \newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
 \newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
 \newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
@@ -165,178 +166,134 @@
 \newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
 \newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
 \newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
-
+\usepackage{fontspec}
+\setmainfont{Linux Libertine O}[
+  BoldFont     = *-Bold,
+  ItalicFont   = *-Italic,
+  BoldItalicFont = *-BoldItalic
+]
 \begin{document}
-\headerfontiii
 
 % Header
 \begin{center}
     {\Huge\textbf{Yusif Mehdiyev}}
 \end{center}
-\vspace{-5mm}
 
 \begin{center}
     \small{
-        +994555418363 | \href{mailto:yusifmehdiyev55@gmail.com}{yusifmehdiyev55@gmail.com}|
-        \href{mailto:ymehdiyev22216@ada.edu.az}{ymehdiyev22216@ada.edu.az}|
+        +44 7350186524 | \href{mailto:yusifmehdiyev55@gmail.com}{yusifmehdiyev55@gmail.com}|
+        \href{mailto:3030575M@student.gla.ac.uk}{3030575M@student.gla.ac.uk}|
         \href{https://josephmehdiyev.org/}{josephmehdiyev.org}
-    }
-\end{center}
-\vspace{-5mm}
-
-\begin{center}
+    } \\
     \small{
         \socialicon{\faGithub} \href{https://github.com/JosephMehdiyev}{JosephMehdiyev}
-        \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/joseph-mehdiyev-6155982ab/} {Joseph Mehdiyev}
+        \socialicon{\faLinkedin} \href{https://www.linkedin.com/in/yusif-mehdiyev-6155982ab/} {Yusif Mehdiyev}
     }
+    \\
+    \small{Qlazqo, Birləşmiş Krallıq} \\
+    \small{Azərbaycan vətəndaşı}
 \end{center}
-\vspace{-5mm}
-\begin{center}
-    \small{Azərbaycan, Bakı}
-\end{center}
+
 
 \section{\textbf{Təhsil}}
 \resumeSubHeadingListStart
-
 \resumeSubheading
-{ADA Universiteti}{Bakı, Azərbaycan}
-{Riyaziyyat üzrə Bakalavr dərəcəsi}{2024 - Hal-hazırda}
+{University of Glasgow}{Qlazqo, Birləşmiş Krallıq}
+{Riyaziyyat (və Statistika) üzrə BSc}{2025 - 2028}
 \resumeItemListStart
-\item GPA: 4.0/4.0
-\item Rektorun Şərəf Siyahısı
-\item Lotfi A. Zadeh Şərəf Siyahısı
-\item IELTS: 7.5 (8.5/8.5/6.5/6)
+\item Azərbaycan dövlət təqaüd proqramı qalibi
+\item GPA: 21/22
+\item Transkript: \href{https://josephmehdiyev.org/about/coursework.pdf}{bu linkdə}
+
 \resumeItemListEnd
-
 \resumeSubheading
-{12 nömrəli Tam Orta Məktəb}{Bakı, Azərbaycan}
-{Ümumi Orta Təhsil}{2013 - 2024}
+{ADA University}{Bakı, Azərbaycan}
+{Riyaziyyat üzrə BSc}{2024 - 2025}
 \resumeItemListStart
-\item CGPA: 4.97/5.00
-\item SAT: 1500/1600 (790 Riyaziyyat,710 Oxuma/Yazma)
-\item 11-ci sinif DIM Buraxılış İmtahanı: 282/300
-\item 9-cu sinif Buraxılış İmtahan: 263/300
-\item 9-cu sinif Fərqlənmə Attestatı
+\item GPA: 3.96/4.00
+\item Rektorun fəxri siyahısı
+\item Lütfi A. Zadə fəxri siyahısı
+
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-
+\vspace{-3mm}
 \section{\textbf{Təcrübə}}
 \resumeSubHeadingListStart
 \resumeSubheading
-{ADA Universitetində Professor Köməkçisi}{Bakı, Azərbaycan}
-{Xətti Cəbr fənnindən Professor Köməkçisi}{Fevral 2025 - Hal-hazırda}
+{{ADA Universitetində Professor Assistantı }}{Bakı, Azərbaycan}
+{Xətti Cəbr üzrə Professor Assistantı}{Fevral 2025 - May 2025}
 \resumeItemListStart
-\item Ev tapşırıqlarının və imtahanların qiymətləndirilməsi, imtahan nəzarəti, ofis saatlarında tələbələrə dəstək və dərslə əlaqəli
-inzibati işlər görürəm.
+\item Ev tapşırıqlarının və imtahanların yoxlanılmasına, imtahan nəzarətinə, tələbələrin repetitorluğuna, ofis saatlarında köməyə və kurs tədrisi ilə bağlı inzibati işlərə dəstək göstərdim.
 \resumeItemListEnd
 \resumeSubHeadingListEnd
-
-\section{\textbf{Layihələr}}
+\vspace{-3mm}
+\section{\textbf{Seçilmiş Layihələr}}
 \resumeSubHeadingListStart
+
+
 \resumeProject
-{Cormat: Riyazi funksiyalarının 3D vizuallaşdırılması üçün proqram}
-{Alətlər: C++, Cmake, OpenGl, GLFW, ImGui, GLSL shaders}
-{Mart 2024 - Hal-hazırda}
+{C++ dilində sıfırdan yazılmış ədədi metodlar kitabxanası}
+{Alətlər: C++, Cmake}
+{Yanvar 2025 - Davam edir}
+{{}\href{https://github.com/JosephMehdiyev/linsolver}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+\item Xətti sistemlərin həlli, interpolasiya və ekstrapolyasiya, kök tapma, məxsusi qiymət və məxsusi vektor hesablanması, optimizasiya, ədədi diferensiallama, ədədi inteqrasiya, statistik hesablama və s. alqoritmlərini həyata keçirən ədədi metodlar kitabxanası üzrə işləyirəm.
+\resumeItemListEnd
+
+\resumeProject
+{Daşınmaz əmlak bazarı məlumatlarının toplanması və analizi}
+{Alətlər: Python, PostgreSQL}
+{Noyabr 2025}
+{{}\href{https://github.com/JosephMehdiyev/az-realestate-analytics}{\textcolor{darkblue}{\faGithub}}}
+\resumeItemListStart
+\item Vebsaytdan xam məlumatları toplayan, onları Tidyverse sxeminə uyğun təşkil edib təmizləyən, PostgreSQL-də saxlayan və Azərbaycan daşınmaz əmlak bazarı üzrə statistik analiz və vizuallaşdırmalar aparan məlumat emalı sistemi qurdum.
+\resumeItemListEnd
+\resumeProject
+{Cormat: sıfırdan yazılmış 3D fizika maşını}
+{Alətlər: C++, Cmake, OpenGl, GLFW, ImGui, GLSL shaderləri}
+{Mart 2024 - İyun 2024}
 {{}\href{https://github.com/JosephMehdiyev/cormat}{\textcolor{darkblue}{\faGithub}}}
 \resumeItemListStart
-\item C++ və OpenGL istifadə edərək sıfırdan 3D riyazi vizuallaşdırma aləti yaradılıb.
-\item Xətti cəbr çevrilmələrini (məsələn, köçürmə, fırlanma, miqyaslama) proqramlaşdırma yolu ilə həyata keçirilib.
-\item Layihəni OOP prinsipləri əsasında modullu və genişlənə bilən şəkildə qurulub.
-\item Layihəni təşkil etmək üçün CMake-dən istifadə edilib.
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-\section{\textbf{Nəşrlər}}
-\resumeSubHeadingListStart
-\resumeProject
-{Ehtimal və Statistika qeydləri}
-{Şəxsi istifadə üçün kitab stilində qeydlər}
-{Mart 2024 - Hal-hazırda}
-{{}\href{https://github.com/JosephMehdiyev/Statistics-and-Probability-with-Code-Applications/blob/main/main.pdf}{\textcolor{darkblue}{\faGithub}}}
-\resumeItemListStart
-\item Ehtimal nəzəriyyəsi, statistik çıxarış və statistik modellərə dair hərtərəfli qeydlər
-\item Ehtimal paylanmaları, hipotez testləri, reqressiya analizi kimi əsas anlayışları öyrənildi
-\resumeItemListEnd
-
-\resumeProject
-{Real Analiz qeydləri}
-{Şəxsi istifadə üçün kitab stilində qeydlər}
-{Sentyabr 2024 - Hal-hazırda}
-{{}\href{https://github.com/JosephMehdiyev/MathmeticalAnalysisNotes/blob/main/main.pdf}{\textcolor{darkblue}{\faGithub}}}
-\resumeItemListStart
-\item Real Analizin əsas mövzularını əhatə edən ətraflı qeydlər
-\item Mürəkkəb riyazi anlayışların başa düşülməsi üçün sübut texnikaları ilə məşğul olundu
-\resumeItemListEnd
-
-\resumeProject
-{Abstract Algebra qeydləri}
-{Şəxsi istifadə üçün kitab stilində qeydlər}
-{Yanvar 2025 - Hal-hazırda}
-{{}\href{https://github.com/JosephMehdiyev/abstract-algebra-notes/blob/main/main.pdf}{\textcolor{darkblue}{\faGithub}}}
-\resumeItemListStart
-\item Şəxsi şəkildə öyrənmək üçün LaTeX ilə qeydlər yazıldı
-\item Group Theory, Ring Theory və Field Theory haqqında yazılacaq
+\item OOP istifadə edərək primitiv fiqurların mesh-lərini render etmək üçün OpenGL əsaslı backend hazırladım.
+\item Kollisyalarda sərt cisimlərin simulyasiyası üçün xətti cəbr çevrilmələri, riyazi və fiziki alqoritmlərdən istifadə etdim.
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
+\vspace{-3mm}
 \section{\textbf{Bacarıqlar}}
 \resumeHeadingSkillStart
-\resumeSubItem{Riyazi Biliklər:}
-{Vektor Analizi, Xətti Cəbr, Qrafik Nəzəriyyəsinin əsasları, Ədədlər Nəzəriyyəsi, Ehtimal və Statistika, Real Analiz, Qrup Nəzəriyyəsi}
 \resumeSubItem{Proqramlaşdırma Dilləri:}
 { C, C++, Python, R, Lua}
+\resumeSubItem{Kitabxanalar:}
+{ NumPy, SciPy, SymPy, Pandas, Matplotlib, PyTorch, Tidyverse}
 \resumeSubItem{Verilənlər Bazası Sistemləri:}
 { PostgreSQL}
-\resumeSubItem{DevOps \& Versiya Kontrolü:}
+\resumeSubItem{DevOps və Versiya Nəzarəti:}
 { Git, Cmake, Docker }
+\resumeSubItem{Digər}
+{ LaTex, GNU Linux, Microsoft Office, Neovim, OpenGL}
 \resumeSubItem{Dil Bilikləri:}
-{Azərbaycan dili (Ana dili), Türk dili (C1), İngilis dili (C1; IELTS 7.5), Fransız dili (B1)}
-\resumeSubItem{Digər Alətlər \& Texnologiyalar:}
-{ Latex, Linux (arch və debian əsaslı), Microsoft Excel, RStudio, Vim/Neovim, Tableau}
+{Azərbaycan dili (Ana dili), Türk dili (C1), İngilis dili (IELTS 7.5), Fransız dili (B1)}
 \resumeHeadingSkillEnd
-
-\section{\textbf{Yarışmalar, Mükafatlar və Fəaliyyətlər}}
+\section{\textbf{Digər}}
 \resumeSubHeadingListStart
 \resumeProject
-{CodeForces Proqramlaşdırma Yarışları}
-{Rəqabətli proqramlaşdırma bacarıqlarının təkmilləşdirilməsi}
-{May 2024 - Hal-hazırda}
-{{}\href{https://codeforces.com/profile/JosephMehdiyev}{\textcolor{darkblue}{\faIcon{globe}}}}
-\resumeItemListStart
-\item Alqoritmik anlayışların və məlumat strukturlarının mənimsənilməsi (DP, qraf alqoritmləri, ağaclar)
-\item Problemlərin sürətli həlli və optimal kod yazmaq üçün təcrübələr
-\resumeItemListEnd
-
-\resumeProject
-{Azərbaycan Olimpiadları bloqqeri}
+{Azərbaycan Olimpiada forumunun maintaineri}
 {Art of Problem Solving Forum}
 {Aprel 2022 - Sentyabr 2022}
 {{}\href{https://artofproblemsolving.com/community/user/948405}{\textcolor{darkblue}{\faIcon{globe}}}}
-\resumeItemListStart
-\item Azərbaycanın milli və beynəlxalq olimpiadaları üçün TSTST, TST və digər problemlərin arxivləşdirilməsi
-\resumeItemListEnd
+
 
 \resumeProject
-{Azərbaycan Gənclər Riyaziyyat Düşərgəsi İştirakçısı}
-{Azərbaycan olimpiad düşərgəsi (IMO, BMO, JBMO üçün)}
+{Azərbaycan junior riyaziyyat düşərgəsinin iştirakçısı}
+{IMO, BMO və JBMO kimi riyaziyyat olimpiyadalarına hazırlayan Azərbaycan Olimpiada düşərgəsi.}
 {Sentyabr 2021 - İyun 2022}
 {}
-\resumeItemListStart
-\item Komanda yoldaşları ilə çətin riyazi problemlərin həllində əməkdaşlıq etdim.
-\item Tənqidi düşüncə və problem həll strategiyalarının təkmilləşdirdim.
-\resumeItemListEnd
-
 \resumeProject
-{Azərbaycan Riyaziyyat Komandası Seçim İmtahanları İştirakçısı}
-{Azərbaycan TST (IMO, BMO, JBMO üçün)}
+{Azərbaycan riyaziyyat komandası seçim imtahanlarının iştirakçısı}
+{IMO, BMO və JBMO kimi riyaziyyat olimpiyadaları üçün Azərbaycan Komanda Seçim İmtahanları (TST).}
 {Sentyabr 2021 - İyun 2022}
 {}
-\resumeItemListStart
-\item Azərbaycan milli komandasının seçim imtahanlarında iştirak etdim.
-\resumeItemListEnd
 \resumeSubHeadingListEnd
-
-% [REFERENCES SECTION REMAINS EXACTLY THE SAME]
-
 \end{document}
