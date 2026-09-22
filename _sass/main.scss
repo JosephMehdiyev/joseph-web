@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #f8f9fa;
     font-family: "Roboto", sans-serif;
@@ -61,14 +65,14 @@ body {
     justify-content: space-between;
     display: flex;
     background-color: #fff;
-    width: 70%;
+    width: 100%;
     margin: auto;
     overflow: hidden;
     min-height: 100vh;
 } 
 .left {
-    width:65%;
-    float: left;
+    flex: 1;
+    min-width: 0;
 }
 .left img {
             width: 100%;  
@@ -108,8 +112,9 @@ p {
 .right {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 25%;
+    justify-content: flex-start;
+    width: auto;
+    flex-shrink: 0;
     height: 500px;
     font-size: 1.1rem;
     float: right;
@@ -225,4 +230,62 @@ h6 {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-6px) rotate(-45deg);
     }
+}
+
+.track {
+    margin: 0 auto 1rem;
+    max-width: 1040px;
+}
+.track img {
+    width: 100%;
+}
+.track figcaption {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+.track audio {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.gallery {
+    margin: 0 auto 1.5rem;
+    max-width: 1300px;
+}
+.gallery figcaption {
+    font-size: 1rem;
+    margin-top: 8px;
+}
+
+.games {
+    margin-bottom: 1rem;
+}
+.games li {
+    list-style: disc;
+    color: inherit;
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.games-shots img {
+    display: block;
+    max-width: 1300px;
+    margin: 0 auto 1rem;
+}
+
+.section-nav {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+.section-nav a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 15px;
+}
+.section-nav a:hover {
+    color: purple;
+}
+
+.track video {
+    width: 100%;
 }

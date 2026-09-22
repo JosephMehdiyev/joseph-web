@@ -1,8 +1,6 @@
-- title: About
-  link: /about/main.html
+- title: CV
+  link: /about/CV.pdf
   subpages:
-    - subtitle: CV
-      sublink: /about/CV.pdf
 - title: Projects
   link: /projects/main.html
   subpages:
